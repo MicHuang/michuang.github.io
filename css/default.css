@@ -1,0 +1,26 @@
+#Copyright {
+  position: fixed;
+  bottom: 10px;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  color: gray;
+}
+
+#Copyright p{
+  text-align:left;
+  padding-left: 40px;
+}
+
+.box {
+  border: 1px red dotted;
+}
+
+.container {
+  max-width: 1500px;
+}
+
+.text {
+  margin-right: 50px;
+}
