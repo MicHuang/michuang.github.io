@@ -2,15 +2,26 @@
   position: fixed;
   bottom: 10px;
   display: block;
-  margin: 0px auto;
+  margin-left: 40px;
   text-align: center;
-  width: 100%;
+  width: 90%;
   color: gray;
 }
 
 #Copyright p{
   text-align:left;
-  padding-left: 40px;
+}
+
+#home {
+  margin-left: 10px;
+}
+
+.col-md-3 hr {
+  margin-top: 10px;
+}
+
+footer{
+    color: #ccc;
 }
 
 .box {
