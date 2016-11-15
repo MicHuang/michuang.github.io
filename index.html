@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MIC</title>
+    <title>Mic</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/default.css" rel="stylesheet">
@@ -36,12 +36,11 @@
                 </ul>
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search...">
+                        <input type="text" id="search" class="form-control" placeholder="Search...">
                     </div>
-                    <button type="submit" class="btn btn-default">></button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-toggle="modal" data-target="#P">:P</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#P">>|</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -51,23 +50,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12 text">
-                <h4>Tags</h4>
+                <h4 class="aside-title">Tags</h4>
                 <hr>
                 <p>
                     <span class="label label-primary">Bootstrap</span>
                     <span class="label label-success">AVISPA</span>
                     <span class="label label-default">Tags</span>
-                    <span class="label label-default">Tags</span>
-                    <span class="label label-default">Tags</span>
                 </p>
-
             </div>
             <div class="col-md-8">
                 <article>
                     <header>
-                        <h2><a href="article.html">Bootstrap + Github Pages 手工搭建博客</a></h2>
-                        <footer><small>Posted on 14 Nov 2016</small></footer>
-                        <div class="lead">
+                        <h2 class="post-title"><a href="article.html">Bootstrap + Github Pages 手工搭建博客</a></h2>
+                        <footer><small>Nov 14, 2016</small></footer>
+                        <div>
                             &emsp;学习学习 Bootstrap，顺便在 Github Pages 上搭个个人博客练练手，也不知道会搭成什么样。 从头自己...
                         </div>
                         <footer>
@@ -78,14 +74,12 @@
 
                 <article>
                     <header>
-                        <h2><a href="#">Just test</a></h2>
-                        <footer><small>Posted on 13 Nov 2016</small></footer>
-                        <div class="lead">
-                            dummy dummy dummy dummy, aslasbflasfblbvlkbvjalsdvbasdvbalskdvblaksdblakjsfhaskldfhalskjdfhlsajkhdflajkshdfsjdfhsdfsdfs sadfsadfasdfsadfasdfasdfasdfsdf.
+                        <h2 class="post-title"><a href="#">Just for testing</a></h2>
+                        <footer><small>Nov 13, 2016</small></footer>
+                        <div>
+                            <p>Tempor tempor dolor fugiat Lorem minim minim non pariatur laboris eu labore ullamco consectetur veniam. Consectetur amet nisi enim est dolor eiusmod et...</p>
                         </div>
                         <footer>
-                            <span class="label label-default">Tags</span>
-                            <span class="label label-default">Tags</span>
                             <span class="label label-default">Tags</span>
                             <span class="label label-default">Tags</span>
                         </footer>
@@ -93,23 +87,9 @@
                 </article>
 
                 <!--标签页-->
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
+                <nav aria-label="...">
+                    <ul class="pager">
+                        <li class="next"><a href="#">Next <span aria-hidden="true">></span></a></li>
                     </ul>
                 </nav>
             </div>

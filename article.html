@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MIC</title>
+    <title>Bootstrap + Github Pages 手工搭建博客</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/default.css" rel="stylesheet">
@@ -34,14 +34,8 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="archive.html">Archive</a></li>
                 </ul>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">></button>
-                </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-toggle="modal" data-target="#P">:P</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#P">>|</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -51,13 +45,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Bootstrap + Github Pages 手工搭建博客</h1>
+                <h1 class="post-title">Bootstrap + Github Pages 手工搭建博客</h1>
                 <footer>
-                    <small>Posted on 14 Nov 2016</small>
+                    <small>Nov 14, 2016</small>
                     <span class="label label-primary">Bootstrap</span>
                 </footer>
                 <hr>
-                <div class="lead">
+                <div>
                     <p>
                         &emsp;学习学习 Bootstrap，顺便在 Github Pages 上搭个个人博客练练手，也不知道会搭成什么样。 从头自己写比起其他现成的博客生成工具来说肯定是要麻烦，但是总的来说所有的布局和功能都可以按自己的想法来做还是很不错的。
                     </p>
@@ -66,6 +60,13 @@
                         &emsp;虽说现在只有大致的框架，先这样，之后再慢慢补上。。。
                     </p>
                 </div>
+                <!--标签-->
+                <nav aria-label="...">
+                    <ul class="pager">
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true"><</span> Just for testing</a></li>
+                        <li class="next"><a href="#">No more <span aria-hidden="true">></span></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
