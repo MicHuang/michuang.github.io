@@ -1,2 +1,2 @@
-Learning Bootstap and for fun!
-<p>Quick entrance: http://micown.com</p>
+学习 Bootstap and for fun!
+<p>快速入口: http://micown.com</p>
