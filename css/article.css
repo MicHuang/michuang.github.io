@@ -1,3 +1,7 @@
 .container {
   max-width: 800px;
 }
+
+.container footer span {
+  float: right;
+}
