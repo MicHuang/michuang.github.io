@@ -180,3 +180,41 @@ html, body {
   font-size: 12px;
   color: #676a6c;
 }
+
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+#content {
+  margin: 20px 0px 50px 0px;
+  background-color: #fff;
+  border-top: 4px solid #e7eaec;
+}
+
+#content header {
+  border-bottom: 1px solid #f3f3f4;
+  padding: 10px 0px;
+}
+
+.page-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 0px 0px 20px;
+  margin: 0px;
+}
+
+.content-inner {
+  padding: 20px;
+}
