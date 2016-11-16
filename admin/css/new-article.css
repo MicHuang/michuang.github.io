@@ -2,3 +2,7 @@
   background-color: #eee;
   padding: 20px;
 }
+
+.chosen-container, .chosen-container-multi, .chosen-with-drop, .chosen-container-active {
+  width: 100% !important;
+}

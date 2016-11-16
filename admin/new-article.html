@@ -9,6 +9,8 @@
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../chosen/chosen.min.css">
+    <link rel="stylesheet" href="../summernote-master/dist/summernote.css">
+
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/new-article.css">
 
@@ -36,7 +38,7 @@
                         </a>
                         <ul class="collapse collapseable" id="collapse-post">
                             <li><a href="new-article.html">Create New</a></li>
-                            <li><a href="article.html">View Articles</a></li>
+                            <li><a href="articles.html">View Articles</a></li>
                         </ul>
                     </li>
 
@@ -147,7 +149,7 @@
 
                                 <div class="form-group">
                                     <label class="sr-only">Article</label>
-                                    <textarea name="article" class="form-control" placeholder="Article"></textarea>
+                                    <textarea name="article" class="form-control summernote" placeholder="Article"></textarea>
                                 </div>
 
                                 <div class="checkbox">
@@ -177,6 +179,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../chosen/chosen.jquery.min.js"></script>
+    <script src="../summernote-master/dist/summernote.min.js"></script>
+
     <script src="js/default.js"></script>
     <script type="text/javascript">
       var config = {
@@ -189,6 +193,12 @@
       for (var selector in config){
         $(selector).chosen(config[selector]);
       }
+    </script>
+
+    <script type="text/javascript">
+      $('.summernote').summernote({
+        height: 200
+      })
     </script>
 </body>
 
