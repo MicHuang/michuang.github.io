@@ -1,11 +1,12 @@
 #Copyright {
-  position: absolute;
+  position: relative;
   bottom: 10px;
   display: block;
   margin-left: 40px;
   text-align: center;
   width: 90%;
   color: gray;
+  margin-bottom: 0px;
 }
 
 #Copyright p{
