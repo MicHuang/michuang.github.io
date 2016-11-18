@@ -1,13 +1,21 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
 #Copyright {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   padding: 10px;
+  width: 90%;
+  height: 40px;
   font-size: 12px;
   border-top: 1px solid #eee;
   margin-left: 40px;
-  display: block;
-  text-align: center;
-  width: 90%;
   color: gray;
 }
 
