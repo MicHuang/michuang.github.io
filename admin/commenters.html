@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tags</title>
+    <title>Commenters</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/tags.css">
 
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/comments.css">
 
 </head>
 
@@ -36,7 +36,7 @@
                         </a>
                         <ul class="collapse collapseable" id="collapse-post">
                             <li><a href="new-article.html">Create New</a></li>
-                            <li><a href="articles.html">View Articles</a></li>
+                            <li><a href="article.html">View Articles</a></li>
                         </ul>
                     </li>
 
@@ -55,14 +55,14 @@
                         </ul>
                     </li>
 
-                    <li class="link">
+                    <li class="link active">
                         <a href="commenters.html">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                             <span class="hidden-sm hidden-xs">Commenters</span>
                         </a>
                     </li>
 
-                    <li class="link active">
+                    <li class="link">
                         <a href="tags.html">
                             <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
                             <span class="hidden-sm hidden-xs">Tags</span>
@@ -121,89 +121,64 @@
                     </header>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4 dashboard-left-cell">
-                        <div class="admin-content-con">
-                            <header>
-                                <h5>Create tags</h5>
-                            </header>
-
-                            <form>
-                                <div class="form-group">
-                                    <label>Add comma separated tags below</label>
-                                    <p>
-                                        <textarea class="form-control" rows="3" placeholder="e.g: python, html, cat..."></textarea>
-                                    </p>
-
-                                    <p>
-                                      <button type="button" class="btn btn-block btn-primary">Save Tags</button>
-                                    </p>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8 dashboard-right-cell">
-                      <div class="admin-content-con">
-                        <header>
-                          <h5>Tags</h5>
-                        </header>
-
-                         <table class="table table-striped table-hover">
-                           <thead>
-                             <tr>
-                               <th>Name</th>
-                               <th>Status</th>
-                               <th>Created</th>
-                               <th>Actions</th>
-                             </tr>
-                           </thead>
-                           <tbody>
-                             <tr>
-                               <td>python</td>
-                               <td><span class="label label-success">in use</span></td>
-                               <td>2 days ago</td>
-                               <td>
-                                 <button type="button" class="btn btn-xs btn-warning">edit</button>
-                                 <button type="button" class="btn btn-xs btn-danger disabled">remove</button>
-                               </td>
-                             </tr>
-                             <tr>
-                               <td>html</td>
-                               <td><span class="label label-success">in use</span></td>
-                               <td>4 days ago</td>
-                               <td>
-                                 <button type="button" class="btn btn-xs btn-warning">edit</button>
-                                 <button type="button" class="btn btn-xs btn-danger disabled">remove</button>
-                               </td>
-                             </tr>
-                             <tr>
-                               <td>cat</td>
-                               <td><span class="label label-default">not used</span></td>
-                               <td>7 days ago</td>
-                               <td>
-                                 <button type="button" class="btn btn-xs btn-warning">edit</button>
-                                 <button type="button" class="btn btn-xs btn-danger">remove</button>
-                               </td>
-                             </tr>
-
-                           </tbody>
-                         </table>
+                <div id="content">
+                    <header class="clearfix">
+                      <div class="col-xs-6 col-sm-3 col-md-3">
+                        <b>All commemters</b>
                       </div>
-                    </div>
-                </div>
+                      <div class="col-xs-6 col-sm-9 col-md-9">
+                        <button type="button" class="btn btn-xs btn-primary pull-right">Create new article</button>
+                      </div>
+                    </header>
 
-                <div class="row">
-                    <footer id="admin-footer" class="clearfix">
-                        <div class="pull-left"><b>Copyright </b>&copy; 2016 Mickey</div>
-                        <div class="pull-right">Admin System</div>
-                    </footer>
+                    <div class="content-inner">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Full name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th class="hidden-xs">Created</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mickey Huang</td>
+                            <td>mickey.huang@gmail.com</td>
+                            <td><span class="label label-success">online</span></td>
+                            <td class="hidden-xs">18-11-2016</td>
+                          </tr>
+
+                          <tr>
+                            <td>2</td>
+                            <td>Jim Doe</td>
+                            <td>jim.doe@gmail.com</td>
+                            <td><span class="label label-default">offline</span></td>
+                            <td class="hidden-xs">16-11-2016</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+
                 </div>
+            </div>
+
+
+            <div class="row">
+                <footer id="admin-footer" class="clearfix">
+                    <div class="pull-left"><b>Copyright </b>&copy; 2016 Mickey</div>
+                    <div class="pull-right">Admin System</div>
+                </footer>
             </div>
         </div>
     </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
     <script src="js/default.js"></script>
 </body>
 
