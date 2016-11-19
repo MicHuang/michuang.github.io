@@ -1,0 +1,18 @@
+.container header {
+  margin: 20px;
+}
+
+.archive-row {
+  border-left: 1px solid #eee;
+  padding: 10px 10px 0px 10px;
+  margin: 0px 0px 5px 0px;
+}
+
+.archive-date {
+  color: #999;
+}
+
+.archive-title a{
+  text-decoration: none;
+  color: #000;
+}

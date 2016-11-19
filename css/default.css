@@ -7,6 +7,10 @@ body {
   margin-bottom: 40px;
 }
 
+.navbar {
+  border: none;
+}
+
 #Copyright {
   position: absolute;
   bottom: 0;
@@ -24,8 +28,12 @@ body {
 }
 
 #home {
-  margin-left: 15px;
+  margin-left: 10px;
   font-size: 15px;
+}
+
+#navbar-right {
+  margin-right: 150px;
 }
 
 .col-md-3 hr {
