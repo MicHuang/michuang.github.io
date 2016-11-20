@@ -88,3 +88,9 @@ footer{
 .container .label-default {
   background-color: #abb2b9;
 }
+
+@media(max-width: 991px){
+  #aside-bar p span {
+    margin-right: 10px;
+  }
+}
