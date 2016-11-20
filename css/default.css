@@ -88,9 +88,11 @@ footer{
 .container .label-default {
   background-color: #abb2b9;
 }
-
+/*
+make side bar tags disply in a col in small devices
 @media(max-width: 991px){
   #aside-bar p span {
     margin-right: 10px;
   }
 }
+*/
