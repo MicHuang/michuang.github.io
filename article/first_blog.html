@@ -16,33 +16,33 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-      <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-              <a class="navbar-brand" id="home" href="../index.html">HOME</a>
-          </div>
+                <a class="navbar-brand" id="home" href="../index.html">HOME</a>
+            </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#" data-toggle="modal" data-target="#P">>|</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right" id="navbar-right">
-                  <li><a href="about.html">ABOUT</a></li>
-                  <li><a href="archive.html">ARCHIVE</a></li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-  </nav>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#P">>|</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="navbar-right">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="archive.html">ARCHIVE</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -72,9 +72,9 @@
                 <!--Disqus model-->
                 <div id="disqus_thread"></div>
                 <script>
-                    var disqus_config = function () {
-                    this.page.url = "http://micown.com/article/first_blog.html",  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = "first_blog"
+                    var disqus_config = function() {
+                        this.page.url = "http://micown.com/article/first_blog.html", // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = "first_blog"
                     };
                     (function() { // DON'T EDIT BELOW THIS LINE
                         var d = document,
@@ -126,6 +126,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script id="dsq-count-scr" src="//micown.disqus.com/count.js" async></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-87805892-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
