@@ -1,7 +1,32 @@
+html, body {
+  font-family: 'Raleway', sans-serif;
+}
+
 .container {
   max-width: 800px;
 }
 
 .container footer span {
   float: right;
+}
+
+pre {
+  border: none;
+}
+
+a {
+  color: #999;
+}
+
+a:hover, a:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.post-content li {
+  list-style: none;
+}
+
+.borderless tbody tr td {
+    border: none;
 }
