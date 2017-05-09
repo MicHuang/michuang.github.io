@@ -2,342 +2,341 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vim</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vim</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/default.css" rel="stylesheet">
-    <link href="css/article.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="css/article.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-                <a class="navbar-brand" id="home" href="../index.html">HOME</a>
-            </div>
+        <a class="navbar-brand" id="home" href="../index.html">HOME</a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-toggle="modal" data-target="#P">>|</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right" id="navbar-right">
-                    <li><a href="../about.html">ABOUT</a></li>
-                    <li><a href="../archive.html">ARCHIVE</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="post-title">简单说一下 Vim</h1>
-                <footer>
-                    <small>Nov 21, 2016</small>
-                    <span class="label label-success">Vim</span>
-                </footer>
-                <hr>
-                <div class="post-content">
-                    <p style="
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" data-toggle="modal" data-target="#P">>|</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="navbar-right">
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../archive.html">ARCHIVE</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="post-title">简单说一下 Vim</h1>
+        <footer>
+          <small>Nov 21, 2016</small>
+          <span class="label label-success">Vim</span>
+        </footer>
+        <hr>
+        <div class="post-content">
+          <p style="
                         font-style: italic;
                         color: #999;">
-                        注：这里讲的都是最最基本的东西，如果你想看高阶的东西。唉我也不会.....
-                    </p>
-                    <p>
-                        昨天打开了被我遗忘在角落好久的Linux的机子，发现自从装完系统以后基本就没怎么碰过，以至于机子里除了自带的一些软件以外其他的什么都没有。然后抱着反正也不想干活那就来随便瞎折腾折腾吧的心理打开了Vim。
-                    </p>
-                    <hr>
-                    <br />
-                    <p>
-                        先上一下效果图吧
-                    </p>
-                    <p>
-                        <img src="../img/Scr_shot_vim.png" class="img-responsive" alt="Responsive image" />
-                    </p>
-                    <br />
+            注：这里讲的都是最最基本的东西，如果你想看高阶的东西。我也不会.....
+          </p>
+          <p>
+            昨天打开了被我遗忘在角落好久的Linux的机子，发现自从装完系统以后基本就没怎么碰过，以至于机子里除了自带的一些软件以外其他的什么都没有。然后抱着反正也不想干活那就来随便瞎折腾折腾吧的心理打开了Vim。
+          </p>
+          <hr>
+          <br />
+          <p>
+            先上一下效果图吧
+          </p>
+          <p>
+            <img src="../img/Scr_shot_vim.png" class="img-responsive" alt="Responsive image" />
+          </p>
+          <br />
 
-                    <h4><b>Vim 的使用</b></h4>
-                    <hr>
-                    <p>
-                        <b>自己看 vimtutor 去</b>
-                    </p>
+          <h4><b>Vim 的使用</b></h4>
+          <hr>
+          <p>
+            <b>自己看 vimtutor 去</b>
+          </p>
 
-                    <p>
-                        讲真，我觉得 vimtutor 真的是最棒的 vim 教材，没有之一。终端直接输入 <code>vimtutor</code> 就能进入，跟着教材过几遍基本也就会了。我满打满算也就跟着 vimtutor 敲了半个小时吧差不多。
-                    </p>
+          <p>
+            讲真，我觉得 vimtutor 真的是最棒的 vim 教材，没有之一。终端直接输入 <code>vimtutor</code> 就能进入，跟着教材过几遍基本也就会了。我满打满算也就跟着 vimtutor 敲了半个小时吧差不多。
+          </p>
 
-                    <p>
-                        真不想看？<br />好吧，要是你只是想试试最最基本的操作而且一看文档就头大，那我就总结一下最最基本的使用方法好了。
-                    </p>
-                    <br />
+          <p>
+            真不想看？<br />好吧，要是你只是想试试最最基本的操作而且一看文档就头大，那我就总结一下最最基本的使用方法好了。
+          </p>
+          <br />
 
-                    <p>
-                        Vim 有三种模式：<br />
-                        <ul>
-                            <li>不能打字模式</li>
-                            <li>打字模式</li>
-                            <li>最底下冒号模式</li>
-                            <br />
-                        </ul>
-                    </p>
-                    <p>
-                        刚进入 Vim 的时候自动处于 “不能打字模式”，这个时候可以控制光标做除了打字以外的一系列神奇的事情：
-                        <table class="table table-condensed  table-striped borderless">
-                            <tbody>
-                                <tr>
-                                    <td><code>j</code>, <code>k</code>, <code>h</code>, <code>l</code></td>
-                                    <td>上下左右</td>
-                                </tr>
+          <p>
+            Vim 有三种模式：<br />
+            <ul>
+              <li>不能打字模式</li>
+              <li>打字模式</li>
+              <li>最底下冒号模式</li>
+              <br />
+            </ul>
+          </p>
+          <p>
+            刚进入 Vim 的时候自动处于 “不能打字模式”，这个时候可以控制光标做除了打字以外的一系列神奇的事情：
+            <table class="table table-condensed  table-striped borderless">
+              <tbody>
+                <tr>
+                  <td><code>j</code>, <code>k</code>, <code>h</code>, <code>l</code></td>
+                  <td>上下左右</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>Ctrl</code> + <code>u</code></td>
-                                    <td>上翻半页</td>
-                                </tr>
+                <tr>
+                  <td><code>Ctrl</code> + <code>u</code></td>
+                  <td>上翻半页</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>Ctrl</code> + <code>d</code></td>
-                                    <td>下翻半页</td>
-                                </tr>
+                <tr>
+                  <td><code>Ctrl</code> + <code>d</code></td>
+                  <td>下翻半页</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>0</code></td>
-                                    <td>跳至行首</td>
-                                </tr>
+                <tr>
+                  <td><code>0</code></td>
+                  <td>跳至行首</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>$</code></td>
-                                    <td>跳至行尾</td>
-                                </tr>
+                <tr>
+                  <td><code>$</code></td>
+                  <td>跳至行尾</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>w</code></td>
-                                    <td>下一个词</td>
-                                </tr>
+                <tr>
+                  <td><code>w</code></td>
+                  <td>下一个词</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>b</code></td>
-                                    <td>上一个词</td>
-                                </tr>
+                <tr>
+                  <td><code>b</code></td>
+                  <td>上一个词</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>i</code></td>
-                                    <td>光标前插入（进入打字模式）</td>
-                                </tr>
+                <tr>
+                  <td><code>i</code></td>
+                  <td>光标前插入（进入打字模式）</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>a</code></td>
-                                    <td>光标后插入（进入打字模式）</td>
-                                </tr>
+                <tr>
+                  <td><code>a</code></td>
+                  <td>光标后插入（进入打字模式）</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>A</code></td>
-                                    <td>行尾插入（进入打字模式）</td>
-                                </tr>
+                <tr>
+                  <td><code>A</code></td>
+                  <td>行尾插入（进入打字模式）</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>o</code></td>
-                                    <td>下面加一行（进入打字模式）</td>
-                                </tr>
+                <tr>
+                  <td><code>o</code></td>
+                  <td>下面加一行（进入打字模式）</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>O</code></td>
-                                    <td>上面加一行（进入打字模式）</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </p>
+                <tr>
+                  <td><code>O</code></td>
+                  <td>上面加一行（进入打字模式）</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
 
-                    <p>
-                        进入“打字模式”以后就可以愉快的打字了，没啥好说的这个。可以按<code>ESC</code>退回到不能打字模式
-                    </p>
+          <p>
+            进入“打字模式”以后就可以愉快的打字了，没啥好说的这个。可以按<code>ESC</code>退回到不能打字模式
+          </p>
 
-                    <p>
-                        当你写完一篇文章以后你觉得很满意，想退出 Vim 去干一些快乐的事情，你就要用到“最底下冒号模式”，首先保证你在“不能打字模式”然后按冒号<code>:</code>就进入了冒号模式。你就可以：
-                        <table class="table table-condensed table-striped borderless">
-                            <tbody>
-                                <tr>
-                                    <td><code>w</code></td>
-                                    <td>保存</td>
-                                </tr>
+          <p>
+            当你写完一篇文章以后你觉得很满意，想退出 Vim 去干一些快乐的事情，你就要用到“最底下冒号模式”，首先保证你在“不能打字模式”然后按冒号<code>:</code>就进入了冒号模式。你就可以：
+            <table class="table table-condensed table-striped borderless">
+              <tbody>
+                <tr>
+                  <td><code>w</code></td>
+                  <td>保存</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>q</code></td>
-                                    <td>退出</td>
-                                </tr>
+                <tr>
+                  <td><code>q</code></td>
+                  <td>退出</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>q!</code></td>
-                                    <td>我不管反正我要退出</td>
-                                </tr>
+                <tr>
+                  <td><code>q!</code></td>
+                  <td>我不管反正我要退出</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>wq</code></td>
-                                    <td>保存后退出</td>
-                                </tr>
+                <tr>
+                  <td><code>wq</code></td>
+                  <td>保存后退出</td>
+                </tr>
 
-                                <tr>
-                                    <td><code>wq!</code></td>
-                                    <td>我不管反正我要保存后退出</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </p>
-                    <p>
-                        以上操作应该够用一阵子了，其实讲真我觉得会<code>hjkl</code>，会<code>i</code>插入，会<code>ESC</code>，然后会<code>:wq!</code>，就能用了。以后哪天有时间了把 vimtutor 撸几遍妥妥的。
-                    </p>
-                    <br />
-                    <h4><b>Vim 配置 + 插件</b></h4>
-                    <hr>
+                <tr>
+                  <td><code>wq!</code></td>
+                  <td>我不管反正我要保存后退出</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+          <p>
+            以上操作应该够用一阵子了，其实讲真我觉得会<code>hjkl</code>，会<code>i</code>插入，会<code>ESC</code>，然后会<code>:wq!</code>，就能用了。以后哪天有时间了把 vimtutor 撸几遍妥妥的。
+          </p>
+          <br />
+          <h4><b>Vim 配置 + 插件</b></h4>
+          <hr>
 
-                    <h2><small>配置</small></h2>
-                    <p>
-                        不过真正让 Vim 变得牛逼的还是它的插件，以及个性化的配置。一般来说 Vim 的默认配置文件在<code>/etc/vim/vimrc</code>，但是我们可以在 home 目录底下新建一个自己的 <code>.vimrc</code> 文件来自定义配置。喜欢看文档的同学可以看看非常详细的 <a href="http://vimdoc.sourceforge.net/htmldoc/starting.html">Vim 文档</a> 研究研究。不喜欢看的咱就先设置一些简单的配置比如说：
-                        <pre>syntax on             "语法高亮<br>set nu                "显示行号<br>mouse=a               "允许使用鼠标<br>showmatch             "匹配括号<br>tabstop=4             "tab键为四格<br>colorscheme molokai   "设置配色方案</pre> 基本的功能差不多了我觉得。
-                    </p>
+          <h2><small>配置</small></h2>
+          <p>
+            不过真正让 Vim 变得牛逼的还是它的插件，以及个性化的配置。一般来说 Vim 的默认配置文件在<code>/etc/vim/vimrc</code>，但是我们可以在 home 目录底下新建一个自己的 <code>.vimrc</code> 文件来自定义配置。喜欢看文档的同学可以看看非常详细的 <a href="http://vimdoc.sourceforge.net/htmldoc/starting.html">Vim 文档</a> 研究研究。不喜欢看的咱就先设置一些简单的配置比如说：
+            <pre>syntax on             "语法高亮<br>set nu                "显示行号<br>mouse=a               "允许使用鼠标<br>showmatch             "匹配括号<br>tabstop=4             "tab键为四格<br>colorscheme molokai   "设置配色方案</pre> 基本的功能差不多了我觉得。
+          </p>
 
-                    <h2><small>插件</small></h2>
-                    <p>
-                        插件建议用 <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> 统一管理，安装 Vundle 的话需要手动把 Vundle 的源文件下载到 home 目录 下的 <code>.vim/bundle/Vundle.vim</code> 文件夹里或者直接在终端输:
-                    </p>
-                    <p>
-                        <pre>$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</pre>
-                    </p>
-                    然后在 <code>.vimrc</code> 文件的开头加上
-                    <p>
-                        <pre>set nocompatible<br>filetype off<br>set rtp+=~/.vim/bundle/Vundle.vim<br>call vundle#begin()<br>Plugin 'VundleVim/Vundle.vim'<br>call vundle#end()</pre>
-                    </p>
-                    <p>
-                        完成上述步骤后进入 Vim，在“底下冒号模式”里输入 <code>PluginInstall</code>, Done! 大功告成！之后想要安装其他的插件只需要在 <code>.vimrc</code> 文件里 <code>call vundle#begin()</code> 之后加上 <code>Plugin '你喜欢的/插件'</code>，然后进入 Vim，在“底下冒号模式”下输入 <code>PluginInstall</code> Vundle
-                        就会自动替你下载安装插件了。
-                    </p>
-                    <br />
-                    <p>
-                        列上几个你可能用的上的插件：<br>
-                        <table class="table borderless table-striped">
-                            <tbody>
-                                <tr>
-                                    <td><a href="https://github.com/scrooloose/nerdtree">'scrooloose/nerdtree'</a></td>
-                                    <td>树形文件目录插件</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://github.com/kien/ctrlp.vim">'kien/ctrlp.vim'</a></td>
-                                    <td>快速搜索文件</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://github.com/Valloric/YouCompleteMe">'Valloric/YouCompleteMe'</a></td>
-                                    <td>大名鼎鼎的YCM自动补全</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://github.com/SirVer/ultisnips">'SirVer/ultisnips'</a></td>
-                                    <td>自动补全增强，可以和YCM搭配使用</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </p>
-                    <br/>
+          <h2><small>插件</small></h2>
+          <p>
+            插件建议用 <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> 统一管理，安装 Vundle 的话需要手动把 Vundle 的源文件下载到 home 目录 下的 <code>.vim/bundle/Vundle.vim</code> 文件夹里或者直接在终端输:
+          </p>
+          <p>
+            <pre>$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</pre>
+          </p>
+          然后在 <code>.vimrc</code> 文件的开头加上
+          <p>
+            <pre>set nocompatible<br>filetype off<br>set rtp+=~/.vim/bundle/Vundle.vim<br>call vundle#begin()<br>Plugin 'VundleVim/Vundle.vim'<br>call vundle#end()</pre>
+          </p>
+          <p>
+            完成上述步骤后进入 Vim，在“底下冒号模式”里输入 <code>PluginInstall</code>, Done! 大功告成！之后想要安装其他的插件只需要在 <code>.vimrc</code> 文件里 <code>call vundle#begin()</code> 之后加上 <code>Plugin '你喜欢的/插件'</code>，然后进入 Vim，在“底下冒号模式”下输入 <code>PluginInstall</code> Vundle 就会自动替你下载安装插件了。
+          </p>
+          <br />
+          <p>
+            列上几个你可能用的上的插件：<br>
+            <table class="table borderless table-striped">
+              <tbody>
+                <tr>
+                  <td><a href="https://github.com/scrooloose/nerdtree">'scrooloose/nerdtree'</a></td>
+                  <td>树形文件目录插件</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/kien/ctrlp.vim">'kien/ctrlp.vim'</a></td>
+                  <td>快速搜索文件</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/Valloric/YouCompleteMe">'Valloric/YouCompleteMe'</a></td>
+                  <td>大名鼎鼎的YCM自动补全</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/SirVer/ultisnips">'SirVer/ultisnips'</a></td>
+                  <td>自动补全增强，可以和YCM搭配使用</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+          <br/>
 
-                    <h4><b>最后</b></h4>
-                    <hr>
-                    <p>
-                        今天开始下雪了，真特么冷...
-                    </p>
-                </div>
-                <!--标签-->
-                <nav aria-label="...">
-                    <ul class="pager">
-                        <li class="previous"><a href="first_blog.html"><span aria-hidden="true"><</span> First Blog</a></li>
-                        <li class="next"><a href="HLPSL.html">关于 HLPSL <span aria-hidden="true">></span></a></li>
-                    </ul>
-                </nav>
-
-                <!--Disqus model-->
-                <div id="disqus_thread"></div>
-                <script>
-                    var disqus_config = function() {
-                        this.page.url = "http://micown.com/article/vim.html", // Replace PAGE_URL with your page's canonical URL variable
-                            this.page.identifier = "vim"
-                    };
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document,
-                            s = d.createElement('script');
-                        s.src = 'http://micown.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-            </div>
+          <h4><b>最后</b></h4>
+          <hr>
+          <p>
+            今天开始下雪了，真特么冷...
+          </p>
         </div>
+        <!--标签-->
+        <nav aria-label="...">
+          <ul class="pager">
+            <li class="previous"><a href="first_blog.html"><span aria-hidden="true"><</span> First Blog</a></li>
+            <li class="next"><a href="HLPSL.html">关于 HLPSL <span aria-hidden="true">></span></a></li>
+          </ul>
+        </nav>
+
+        <!--Disqus model-->
+        <div id="disqus_thread"></div>
+        <script>
+          var disqus_config = function() {
+            this.page.url = "http://micown.com/article/vim.html", // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = "vim"
+          };
+          (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement('script');
+            s.src = 'http://micown.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      </div>
     </div>
+  </div>
 
-    <!-- copyright-->
-    <div id="Copyright">
-        <p><b>Copyright </b>&copy; 2016 Mickey</p>
-    </div>
-    <!-- 模态框-->
-    <div class="modal fade bs-example-modal-sm" id="P" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Opss..</h4>
-                </div>
-                <div class="modal-body">
-                    <p>It's nothing here&hellip;</p>
-
-                    <p>
-                        <label class="sr-only">Username</label>
-                        <input type="text" class="form-control" placeholder="Username" required autofocus>
-                    </p>
-
-                    <p>
-                        <label class="sr-only">Password</label>
-                        <input type="text" class="form-control" placeholder="Password" required>
-                    </p>
-
-                    <p class="checkbox">
-                        <label><input type="checkbox">Remember me</label>
-                    </p>
-                    <button type="submit" class="btn btn-default btn-block">Enter</button>
-                </div>
-            </div>
+  <!-- copyright-->
+  <div id="Copyright">
+    <p><b>Copyright </b>&copy; 2016 Mickey</p>
+  </div>
+  <!-- 模态框-->
+  <div class="modal fade bs-example-modal-sm" id="P" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Opss..</h4>
         </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script id="dsq-count-scr" src="//micown.disqus.com/count.js" async></script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        <div class="modal-body">
+          <p>It's nothing here&hellip;</p>
 
-        ga('create', 'UA-87805892-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+          <p>
+            <label class="sr-only">Username</label>
+            <input type="text" class="form-control" placeholder="Username" required autofocus>
+          </p>
+
+          <p>
+            <label class="sr-only">Password</label>
+            <input type="text" class="form-control" placeholder="Password" required>
+          </p>
+
+          <p class="checkbox">
+            <label><input type="checkbox">Remember me</label>
+          </p>
+          <button type="submit" class="btn btn-default btn-block">Enter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script id="dsq-count-scr" src="//micown.disqus.com/count.js" async></script>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-87805892-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 
 </html>
