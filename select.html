@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Non-responsive Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/firstPage.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <style>/*custom font*/
+      @import url(http://fonts.googleapis.com/css?family=Montserrat);</style>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- The mobile navbar-toggle button can be safely removed since you do not need it in a non-responsive implementation -->
+          <a class="navbar-brand" href="index.html">MAO GLASSES</a>
+        </div>
+        <!-- Note that the .navbar-collapse and .collapse classes have been removed from the #navbar -->
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">EYEGLASSES</a></li>
+            <li><a href="#about">SUNGLASSES</a></li>
+            <li><a href="#contact">RFLKT</a></li>
+            <li><a href="#contact">DISCOVER</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-8">
+
+                <!-- multistep form -->
+            <form id="msform">
+              <!-- progressbar -->
+              <ul id="progressbar">
+                <li class="active">Usage</li>
+                <li>Prescription</li>
+                <li>Lens Type</li>
+                <li>Lens Option</li>
+              </ul>
+              <!-- fieldsets -->
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-6">
+                      <div class="option">
+                        <p><b>DISTANCE</b></p>
+                        <hr>
+                        <p>General use lenses for seeing things far away</p>
+                      </div>
+                      <div class="option">
+                          <p><b>READING</b></p>
+                          <hr>
+                          <p>General use lenses for seeing things up close</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="option">
+                          <p><b>MULTIFOCAL</b></p>
+                          <hr>
+                          <p>Lenses for seeing things both close and far away</p>
+                      </div>
+                      <div class="option">
+                          <p><b>NON-PRESCRIPTION</b></p>
+                          <hr>
+                          <p>Lenses without any prescription</p>
+                      </div>
+                  </div>
+                </div>
+                <input type="button" name="next" class="next action-button" value="Next" />
+              </fieldset>
+              <fieldset class="prescription">
+                <div class="row">
+                  <table class="table">
+                    <thead>
+                      <th></th>
+                      <th>Sphere (SPH)</th>
+                      <th>Cylinder (CYL)</th>
+                      <th>Axis</th>
+                      <th>ADD</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>OD(Right eye)</td>
+                        <td>
+                          <select>
+                            <option value="-1">-1</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                          </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="-1">-1</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                              </select>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>OS(Left eye)</td>
+                          <td>
+                              <select>
+                                  <option value="-1">-1</option>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                          </td>
+                          <td>
+                              <select>
+                                  <option value="-1">-1</option>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                </select>
+                          </td>
+                          <td>
+                            <input type="text">
+                          </td>
+                          <td>
+                            <input type="text">
+                          </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <td>PD(Pupillary Distance)</td>
+                      <td>1</td>
+                      <td>
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tfoot>
+                  </table>
+
+                </div>
+                <!--
+                <h2 class="fs-title">Social Profiles</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="text" name="twitter" placeholder="Twitter" />
+                <input type="text" name="facebook" placeholder="Facebook" />
+                <input type="text" name="gplus" placeholder="Google Plus" />
+                -->
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" class="next action-button" value="Next" />
+
+              </fieldset>
+              <fieldset>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="option">
+                            <p><b>CLEAR</b></p>
+                            <hr>
+                            <p>Traditional, transparent lenses perfect for everyday use</p>
+                          </div>
+                          <div class="option">
+                              <p><b>DIGITAL SCREEN PROTECTION</b></p>
+                              <hr>
+                              <p>Help protect your eyes while using devices such as phones, computers, and tablets</p>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="option">
+                              <p><b>SUN</b></p>
+                              <hr>
+                              <p>Tint or coat your lenses and turn regular frames into sunglasses</p>
+                          </div>
+                          <div class="option">
+                              <p><b>LIGHT ADJUSTING</b></p>
+                              <hr>
+                              <p>Lenses that darken when exposed to outside light and remain clear inside</p>
+                          </div>
+                      </div>
+                    </div>
+                <!--
+                <h2 class="fs-title">Personal Details</h2>
+                <h3 class="fs-subtitle">We will never sell it</h3>
+                <input type="text" name="fname" placeholder="First Name" />
+                <input type="text" name="lname" placeholder="Last Name" />
+                <input type="text" name="phone" placeholder="Phone" />
+                <textarea name="address" placeholder="Address"></textarea>
+                -->
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+              </fieldset>
+              <fieldset>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="option">
+                            <p><b>PREMIUM LENSES - Included</b></p>
+                            <hr>
+                            <p>Quality 1.59 index lenses with UV-protective, anti-scratch, anti-reflective coatings.</p>
+                          </div>
+                          <div class="option">
+                              <p><b>ADVANCED LENSES - $130.90</b></p>
+                              <hr>
+                              <p>Quality 1.74 index lenses with UV-protective, anti-scratch, anti-reflective, and water repellent coatings.</p>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="option">
+                              <p><b>MOST POPULAR LENSES - $64.90</b></p>
+                              <hr>
+                              <p>Quality 1.6 index lenses with UV-protective, anti-scratch, anti-reflective coatings.</p>
+                          </div>
+
+                      </div>
+                    </div>
+                  <input type="button" name="previous" class="previous action-button" value="Previous" />
+                  <input type="submit" name="submit" class="submit action-button" value="Confirm" />
+                </fieldset>
+            </form>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="glass-header" style="margin-top: 40px;">
+                <h2>Sample</h2>
+                <br>
+              </div>
+
+              <div class="details">
+                <img src="img/Sample5.jpg" alt="">
+              </div>
+
+              <br>
+              <div class="price">
+                <p style="font-size: 1.1em;">Totle: <b style="font-size: 1.7em;">$199</b></p>
+              </div>
+              <br>
+
+              <div class="select">
+                <a href="#" class="btn btn-default select">CONFIRM</a>
+              </div>
+        </div>
+
+      </div>
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="jQuery/jquery-1.9.1.min.js"></script>
+    <script src="jQuery/jquery.easing.min.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
