@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>New Blog</title>
+    <title>Wordpress Immagration</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -53,14 +53,52 @@
                 </footer>
                 <hr>
                 <div class="post-content">
-                    <p>After you installed a new Ubuntu server, make sure it has the latest version of LAMP enviroment set up.</p>
+                    <p>Before you start, make sure your Ubuntu server has the latest version of LAMP enviroment set up.</p>
 
                     <p>If you want install LAMP stack for your Ubuntu server, check <a href="https://linode.com/docs/web-servers/lamp/install-lamp-stack-on-ubuntu-16-04/">here</a>.</p>
+                    <hr>
+
+                    <h4><b>1. Install wordpress on your server.</b></h4>
+                    <p><a href="https://codex.wordpress.org/Installing_WordPress" target="_blank">CHECK HOW</a></p>            
+                    <br />
+
+                    <h4><b>2. Install the same theme and the same plugins.</b></h4>
+                    <p>It is important to install the theme and plugins before hands on the export-import so that we will have less errors.</p>
+                    <br />
+
+                    <h4><b>3. Get export file.</b></h4>
+                    <p>Go to the origin wordpress site, find Tool > Export, choose "All content" Then click "Download Export File" to creat an "XML" file of your entire blog.</p>
+                    <br />
+
+                    <h4><b>4. Using patched importer instead of WP importer if using beaver builder.</b></h4>
+                    <p>There seems to be an issue with the native WP importer. In Order to keep all the modules and same format, beaver builder has a patched importer to use: <a href="http://forum.wpbeaverbuilder.com/downloads/wordpress-importer-patched.zip">http://forum.wpbeaverbuilder.com/downloads/wordpress-importer-patched.zip</a></p>
+                    <p>Download and install it into your destination wordpress site.</p>
+                    <br />
+
+                    <h4><b>5. Importing.</b></h4>
+                    <p>Find Tool section of the Dashboard and select "Import", choose wordpress and upload the XML file you got in step 3. Remember to select "Download & import file attachments" to move your media along with the rest of your blog</p>
+                    <br />
+
+                    <h4><b>6. Taking care of the rest.</b></h4>
+                    <p>We almost finish, now we have all the contents but still need set the front page to be the good one, change all the dependency link addresses to the right page. Making sure all the plugins are set up, check everything and you are good to go!</p>
+                    <br />
+
+                    <h4><b>Truble Shooting</b></h4>
+                    <hr>
+                    <p>
+                        <small><b>1. FTP problem with installing plugings in your ubuntu server. </b>
+                        <a href="https://stackoverflow.com/questions/640409/can-i-install-update-wordpress-plugins-without-providing-ftp-access">CLICK HERE</a></small>
+                    </p>
+                    <p>
+                        <small><b>2. Supporing simpleXML in PHP. </b>
+                        <a href="https://stackoverflow.com/questions/35593521/php-7-simplexml">CLICK HERE</a></small>
+                    </p>
+
                 </div>
                 <!--标签-->
                 <nav aria-label="...">
                     <ul class="pager">
-                        <li class="previous "><a href="#"><span aria-hidden="true"><</span> Previous Blog </a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true"><</span> Previous Blog </a></li>
                         <li class="next disabled"><a href="#">No more <span aria-hidden="true">></span></a></li>
                     </ul>
                 </nav>
