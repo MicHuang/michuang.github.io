@@ -23,7 +23,6 @@ function onRequest(request, response){
 
     fs.readFile(pathname.substr(1),function(err, data) {  
         if(err) {  
-            console.log(err);  
             send404(response);
         }  
         else {  
