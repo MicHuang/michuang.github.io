@@ -21,11 +21,11 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" id="home" href="../index.html">HOME</a>
       </div>
 
@@ -206,7 +206,8 @@
 
           <h2><small>配置</small></h2>
           <p>
-            不过真正让 Vim 变得牛逼的还是它的插件，以及个性化的配置。一般来说 Vim 的默认配置文件在<code>/etc/vim/vimrc</code>，但是我们可以在 home 目录底下新建一个自己的 <code>.vimrc</code> 文件来自定义配置。喜欢看文档的同学可以看看非常详细的 <a href="http://vimdoc.sourceforge.net/htmldoc/starting.html">Vim 文档</a> 研究研究。不喜欢看的咱就先设置一些简单的配置比如说：
+            不过真正让 Vim 变得牛逼的还是它的插件，以及个性化的配置。一般来说 Vim 的默认配置文件在<code>/etc/vim/vimrc</code>，但是我们可以在 home 目录底下新建一个自己的 <code>.vimrc</code> 文件来自定义配置。喜欢看文档的同学可以看看非常详细的 <a href="http://vimdoc.sourceforge.net/htmldoc/starting.html">Vim 文档</a>
+            研究研究。不喜欢看的咱就先设置一些简单的配置比如说：
             <pre>syntax on             "语法高亮<br>set nu                "显示行号<br>mouse=a               "允许使用鼠标<br>showmatch             "匹配括号<br>tabstop=4             "tab键为四格<br>colorscheme molokai   "设置配色方案</pre> 基本的功能差不多了我觉得。
           </p>
 
@@ -222,7 +223,8 @@
             <pre>set nocompatible<br>filetype off<br>set rtp+=~/.vim/bundle/Vundle.vim<br>call vundle#begin()<br>Plugin 'VundleVim/Vundle.vim'<br>call vundle#end()</pre>
           </p>
           <p>
-            完成上述步骤后进入 Vim，在“底下冒号模式”里输入 <code>PluginInstall</code>, Done! 大功告成！之后想要安装其他的插件只需要在 <code>.vimrc</code> 文件里 <code>call vundle#begin()</code> 之后加上 <code>Plugin '你喜欢的/插件'</code>，然后进入 Vim，在“底下冒号模式”下输入 <code>PluginInstall</code> Vundle 就会自动替你下载安装插件了。
+            完成上述步骤后进入 Vim，在“底下冒号模式”里输入 <code>PluginInstall</code>, Done! 大功告成！之后想要安装其他的插件只需要在 <code>.vimrc</code> 文件里 <code>call vundle#begin()</code> 之后加上 <code>Plugin '你喜欢的/插件'</code>，然后进入 Vim，在“底下冒号模式”下输入 <code>PluginInstall</code> Vundle
+            就会自动替你下载安装插件了。
           </p>
           <br />
           <p>
@@ -248,7 +250,7 @@
               </tbody>
             </table>
           </p>
-          <br/>
+          <br />
 
           <h4><b>最后</b></h4>
           <hr>
@@ -259,7 +261,8 @@
         <!--标签-->
         <nav aria-label="...">
           <ul class="pager">
-            <li class="previous"><a href="first_blog.html"><span aria-hidden="true"><</span> First Blog</a></li>
+            <li class="previous"><a href="first_blog.html"><span aria-hidden="true">
+                  << /span> First Blog</a></li>
             <li class="next"><a href="HLPSL.html">关于 HLPSL <span aria-hidden="true">></span></a></li>
           </ul>
         </nav>
@@ -287,7 +290,7 @@
 
   <!-- copyright-->
   <div id="Copyright">
-    <p><b>Copyright </b>&copy; 2016 Mickey</p>
+    <p><b>Copyright </b>&copy; 2020 Yiqi</p>
   </div>
   <!-- 模态框-->
   <div class="modal fade bs-example-modal-sm" id="P" tabindex="-1" role="dialog">
