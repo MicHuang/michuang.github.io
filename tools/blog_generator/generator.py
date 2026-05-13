@@ -131,8 +131,6 @@ def main() -> int:
         tags=build_tag_html(tags),
         content=build_content_html(args.content),
         pager=build_pager(args),
-        canonical_url=f"https://micown.com/article/{filename}",
-        disqus_identifier=Path(filename).stem,
     )
 
     output_path.write_text(html_text, encoding="utf-8")

@@ -1,4 +1,4 @@
-学习 Bootstap and for fun!
+Bootstrap and have fun!
 
 ## Local preview
 
